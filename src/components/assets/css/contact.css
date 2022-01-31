@@ -1,0 +1,130 @@
+.contact {
+	width: 80%;
+	margin: 50px auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 15px;
+}
+.contactbox {
+	width: 80%;
+	background: #161b22;
+	padding: 50px;
+	border-radius: 10px;
+}
+
+.contactbox .form-group label {
+	margin-bottom: 10px;
+	color: red;
+	padding: 15px 5px;
+}
+
+.contactbox .form-control {
+	margin-top: 10px;
+	width: 100%;
+	padding: 10px 30px;
+	border-radius: 6px;
+	font-size: 25px;
+	outline: none;
+	border: none;
+	background: #0d1117;
+	color: white;
+}
+
+.form-group {
+	padding: 10px auto;
+	margin: 20px;
+}
+
+.form-control:focus {
+	box-shadow: 0 0px 1px 1px royalblue;
+}
+.form-control:hover {
+	/* box-shadow: 0 0px 1px 1px royalblue; */
+	color: white;
+	background: #0b0f14;
+}
+
+.txtmsg {
+	resize: vertical;
+	min-height: 100px;
+	max-height: 300px;
+}
+
+.submitbutton {
+	color: white;
+	width: 100%;
+	background: red;
+	border: 0;
+	outline: none;
+	padding: 15px 5px;
+	font-size: 25px;
+	border-radius: 9px;
+	cursor: pointer;
+}
+
+.submitbutton:hover {
+	background: rgb(173, 0, 0);
+}
+
+.sociallinks {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.sociallinkbtn {
+	height: 70px;
+	width: 70px;
+	background: rgb(255, 255, 255);
+	display: grid;
+	place-content: center;
+	text-decoration: none;
+	font-size: 40px;
+	border-radius: 50%;
+	margin: 10px 30px;
+}
+
+.sociallinkbtn:hover {
+	opacity: 0.5;
+}
+.alertdiv {
+	padding: 10px;
+}
+
+.alert-d {
+	background: red;
+	text-align: center;
+	line-height: 50px;
+}
+
+.alert-s {
+	background: rgb(11, 133, 11);
+	text-align: center;
+	line-height: 50px;
+	color: white;
+}
+
+@media (max-width: 1300px) {
+	.contact {
+		width: 100%;
+		padding: 10px 10px;
+	}
+	.contactbox {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	.sociallinks {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	form {
+		width: 100%;
+	}
+	.sociallinkbtn {
+		margin: 10px;
+	}
+}

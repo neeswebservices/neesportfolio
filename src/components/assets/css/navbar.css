@@ -1,0 +1,159 @@
+nav {
+	background: #161b22;
+	color: white;
+	font-family: "sans-serif";
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: sticky;
+	min-height: 9vh;
+	top: 0;
+	z-index: 99;
+}
+
+.gitlink {
+	color: #eee;
+	font-size: 30px;
+}
+.gitlink:hover {
+	color: rgba(255, 255, 255, 0.794);
+}
+
+.left {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30%;
+}
+.right {
+	width: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	margin: auto 15px;
+}
+
+.right ul {
+	width: 100%;
+}
+
+.right ul li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.navlink {
+	color: #efefef;
+	font-family: Roboto-mono;
+	letter-spacing: 1px;
+	margin: auto 20px;
+	text-decoration: none;
+	padding: 5px 10px;
+	position: relative;
+}
+
+.navlink::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -3px;
+	width: 0;
+	height: 3px;
+	transition: 0.3s ease-in;
+	background: lime;
+}
+
+.navlink:hover::after {
+	width: 100%;
+}
+
+.active {
+	color: rgb(83, 214, 8);
+	font-family: Roboto-mono;
+	letter-spacing: 1px;
+	margin: auto 20px;
+	text-decoration: none;
+	padding: 5px 10px;
+}
+
+.btndiv i {
+	font-size: 30px;
+	margin: auto 20px;
+	width: 100%;
+	display: none;
+}
+
+#close {
+	position: fixed;
+	top: 30px;
+	left: -50px;
+	z-index: -1;
+	transition: 1s ease-in;
+	font-size: 30px;
+}
+
+#open {
+	display: none;
+}
+
+@media (max-width: 1300px) {
+	.btndiv {
+		display: block;
+	}
+	nav {
+		height: 12vh;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.637);
+	}
+	.right {
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-end;
+		overflow: hidden;
+	}
+	.navbar {
+		position: fixed;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		background: #161b22;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		transition: 0.2s ease-in;
+		overflow: hidden;
+	}
+	ul li {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		flex-direction: column;
+		height: 100%;
+		font-size: 30px;
+	}
+	#close {
+		position: fixed;
+		top: 30px;
+		left: 15px;
+		font-size: 35px;
+		z-index: 99;
+		animation: rotate 0.5s linear;
+	}
+
+	#open {
+		display: block;
+		cursor: pointer;
+	}
+}
+@keyframes rotate {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

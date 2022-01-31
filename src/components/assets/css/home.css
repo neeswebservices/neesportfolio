@@ -1,0 +1,118 @@
+.home-container {
+	width: 90%;
+	margin: 50px auto;
+	display: flex;
+	height: 80vh;
+	cursor: no-drop;
+}
+
+.left-home {
+	width: 50%;
+	float: left;
+	margin-right: 20px;
+	display: flex;
+}
+
+.right-home {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.txt {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.txt span {
+	font-size: 200px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.right-image {
+	width: 50%;
+	border-radius: 50%;
+}
+.name {
+	min-width: 1000px;
+	max-width: 1000px;
+	min-height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.txt .name .letter {
+	font-size: 150px;
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	transition: all 0.1s ease-in;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: white;
+}
+.txt .name .letter:hover {
+	animation: letters 0.1s linear;
+}
+@keyframes letters {
+	0% {
+		transform: translateX();
+	}
+	50% {
+		transform: translateY(-20px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.txt span {
+		font-size: 20px;
+		font-weight: bold;
+		color: #fff;
+	}
+	.name {
+		min-width: 100px;
+		min-height: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.txt .name .letter {
+		font-size: 50px;
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: white;
+	}
+	.home-container {
+		width: 95%;
+		margin: 20px auto;
+		flex-direction: column;
+		display: flex;
+		cursor: no-drop;
+		flex-flow: column-reverse;
+		justify-content: center;
+	}
+
+	.left-home {
+		width: 100%;
+		float: left;
+		margin-right: 0px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.right-home {
+		width: 100%;
+		display: flex;
+		margin-bottom: 10px;
+		align-items: center;
+		justify-content: center;
+	}
+}

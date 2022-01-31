@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/home";
+import Navbar from "./components/inc/navbar";
+import About from "./components/about";
+import Contact from "./components/contact";
+import Skills from "./components/skills";
+import Service from "./components/service";
+import Blog from "./components/blog";
+import Pagenotfound from "./components/pagenotfound";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<Router>
+			<Navbar />
+			<Routes>
+				iimiiiiiasdfdfsafsdfsdafds
+				<Route path='/' element={<Home />}></Route>
+				<Route path='/about' element={<About />}></Route>
+				<Route path='/contact' element={<Contact />}></Route>
+				<Route path='/skills' element={<Skills />}></Route>
+				<Route path='/service' element={<Service />}></Route>
+				<Route path='/blog' element={<Blog />}></Route>
+				<Route path='*' element={<Pagenotfound />}></Route>
+			</Routes>
+		</Router>
+	);
 }
 
 export default App;

@@ -1,0 +1,96 @@
+.about {
+	width: 70%;
+	margin: 150px auto;
+	border: 1px solid rgba(255, 255, 255, 0.63);
+	border-radius: 9px;
+	font-family: sans-serif;
+	letter-spacing: 0.5px;
+	position: relative;
+	padding: 40px 30px;
+}
+.img-container {
+	padding: 20px;
+	margin-bottom: 10px;
+}
+.images {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.avtar-img {
+	width: 50px;
+	margin: auto 20px;
+	border-radius: 50%;
+}
+
+.tag {
+	padding: 5px 5px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: 900;
+	color: lime;
+	font-family: Roboto mono;
+}
+
+.data-list {
+	padding: 20px 50px;
+}
+
+.data-list li {
+	list-style-type: disc;
+	list-style: circle;
+	padding: 10px;
+}
+
+.button {
+	background: limegreen;
+	color: purple;
+	padding: 10px 25px;
+	font-size: 20px;
+	border-radius: 9px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+.button:hover {
+	color: white;
+}
+
+.chiron-text {
+	letter-spacing: 1px;
+	display: flex;
+	align-items: center;
+}
+@media screen and (max-width: 1300px) {
+	.chiron-text {
+		flex-direction: column;
+		padding: 10px;
+	}
+	.avtar-img {
+		width: 50px;
+		margin: auto 20px;
+		border-radius: 50%;
+	}
+	.data-list {
+		padding: 0;
+	}
+	.data-list li {
+		padding: 0;
+		margin: 20px auto;
+		font-size: 16px;
+	}
+	.about {
+		width: 95%;
+		margin: 30px auto;
+		padding: 20px 10px;
+	}
+	.header-title {
+		display: none;
+	}
+	.git-img {
+		width: 100%;
+	}
+}
