@@ -6,27 +6,37 @@ const Contact = () => {
 	let sociallinks = [
 		{
 			name: "fab fa-facebook-f",
-			link: "",
+			link: "https://www.facebook.com/techneesofficial17/",
 			color: "royalblue",
 		},
 		{
 			name: "fab fa-instagram",
-			link: "",
+			link: "https://www.instagram.com/tech_nees_official/",
 			color: "golden",
 		},
 		{
 			name: "fab fa-github",
-			link: "",
+			link: "https://github.com/techneesofficial17",
 			color: "purple",
 		},
 		{
 			name: "fas fa-globe",
-			link: "",
+			link: "https://neeswebservices.business.site/",
 			color: "black",
 		},
 		{
+			name: "fab fa-linkedin-in",
+			link: "https://np.linkedin.com/in/techneesofficial17",
+			color: "blue",
+		},
+		{
+			name: "fab fa-twitter",
+			link: "https://twitter.com/neeschalyt",
+			color: "royalblue",
+		},
+		{
 			name: "fas fa-mug-hot",
-			link: "",
+			link: "buymeacoffee.com/neesofficial",
 			color: "brown",
 		},
 	];
@@ -128,7 +138,7 @@ const Contact = () => {
 					</form>
 					<div className='sociallinks'>
 						{sociallinks.map((l) => (
-							<a href={l.link} target='_blank' className='sociallinkbtn'>
+							<a href={l.link} rel='noopener' className='sociallinkbtn'>
 								<i style={{ color: l.color }} className={`fab ${l.name}`}></i>
 							</a>
 						))}
